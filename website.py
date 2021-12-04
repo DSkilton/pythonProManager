@@ -1,7 +1,7 @@
 from BaseClass import BaseClass
 
 
-class website(BaseClass):
+class Website(BaseClass):
     server_name = ""
     number_of_pages = ""
 
