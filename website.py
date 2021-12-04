@@ -5,6 +5,11 @@ class Website(BaseClass):
     server_name = ""
     number_of_pages = ""
 
-    def set_web_details(self, server_name, num_of_pages):
-        self.server_name = server_name
-        self.number_of_pages = num_of_pages
+    def request_info(self):
+        base = BaseClass()
+        base.request_info()
+        self.set_details()
+
+    def set_details(self):
+        self.server_name = input("What is the server add? ")
+        self.number_of_pages = input("How many pages? ")
