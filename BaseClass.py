@@ -12,4 +12,3 @@ class BaseClass:
         self.deadline = input("What is the deadline? ")
         self.client = input("Who is the client? ")
         self.price = input("How much is the quote? ")
-

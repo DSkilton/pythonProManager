@@ -1,4 +1,3 @@
-from BaseClass import BaseClass
 from website import Website
 from app import App
 from game import Game
@@ -14,16 +13,12 @@ def menu():
     if selection == 1:
         web = Website()
         web.request_info()
-        # web.set_details()
+    elif selection == 2:
+        app = App()
+        app.request_info()
+    elif selection == 3:
+        game = Game()
+        game.request_info()
 
 
 menu()
-
-
-def new_website():
-    name = Website()
-    name.project_name = "Project"
-    name.deadline = "deadline"
-    name.server_name = "192.172.0.0"
-    name.get_base()
-    print(name.project_name, name.server_name)

@@ -11,4 +11,3 @@ class App(BaseClass):
 
     def set_details(self):
         self.type = input("What type of app? ")
-

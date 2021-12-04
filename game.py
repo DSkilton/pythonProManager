@@ -13,4 +13,3 @@ class Game(BaseClass):
     def set_details(self):
         self.platform = input("Which platform? ")
         self.genre = input("What genre? ")
-
