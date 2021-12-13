@@ -1,11 +1,11 @@
-from BaseClass import BaseClass
+from ProjectBasics import ProjectBasics
 
 
-class App(BaseClass):
+class App(ProjectBasics):
     type = ""
 
     def request_info(self):
-        base = BaseClass()
+        base = ProjectBasics()
         base.request_info()
         self.set_details()
 

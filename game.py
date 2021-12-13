@@ -1,12 +1,12 @@
-from BaseClass import BaseClass
+from ProjectBasics import ProjectBasics
 
 
-class Game(BaseClass):
+class Game(ProjectBasics):
     platform = ""
     genre = ""
 
     def request_info(self):
-        base = BaseClass()
+        base = ProjectBasics()
         base.request_info()
         self.set_details()
 
